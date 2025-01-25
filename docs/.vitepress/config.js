@@ -7,5 +7,14 @@ export default {
         { text: 'Sobre', link: '/sobre' },
       ],
     },
-  };
+    vite: {
+      css: {
+        preprocessorOptions: {
+          css: {
+            additionalData: '@import "./theme/index.css";',
+          },
+        },
+      },
+    },
+  }
   

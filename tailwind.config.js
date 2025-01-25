@@ -1,12 +1,10 @@
 module.exports = {
   content: [
-    './index.html',
-    './src/**/*.{vue,js,ts,jsx,tsx}',
-    './docs/**/*.{md,vue}',
-    './.vitepress/**/*.{md,vue}',
+    './index.md',
+    './docs/**/*.{md,vue}', // Padrão para arquivos markdown e vue
   ],
   theme: {
     extend: {},
   },
   plugins: [],
-};
+}
