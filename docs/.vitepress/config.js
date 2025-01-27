@@ -1,20 +1,16 @@
 export default {
-    title: 'Minha Landing Page',
-    description: 'Landing page incrível com VitePress e Tailwind.',
-    themeConfig: {
-      nav: [
-        { text: 'Início', link: '/' },
-        { text: 'Sobre', link: '/sobre' },
-      ],
-    },
-    vite: {
-      css: {
-        preprocessorOptions: {
-          css: {
-            additionalData: '@import "./theme/index.css";',
-          },
+  themeConfig: {
+    nav: [],  // Desativa a navbar do VitePress
+    siteTitle: false,  // Desativa o título do site na navbar
+    logo: false,  // Desativa o logo na navbar
+  },
+  vite: {
+    css: {
+      preprocessorOptions: {
+        css: {
+          additionalData: '@import "./theme/index.css";',
         },
       },
     },
-  }
-  
+  },
+};
