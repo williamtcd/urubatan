@@ -1,18 +1,5 @@
----
-layout: Layout
-navbar: false
-title: Edson Urubatan
-titleTemplate: false
----
+# Projeto Edson
 
-<script setup>
-import Apresentacao from './components/Apresentacao.vue'
-import Tragetoria from './components/Tragetoria.vue'
-import Livros from './components/Livros.vue'
-import Videos from './components/Videos.vue'
-</script>
-
-<Apresentacao />
-<Tragetoria />
-<Livros />
-<Videos />
+<div class="p-4 bg-red-500 text-white">
+  Isso é um teste com Tailwind CSS!
+</div>
