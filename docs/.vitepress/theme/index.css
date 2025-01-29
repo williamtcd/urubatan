@@ -2,3 +2,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply bg-lightBgPrimary text-lightTextPrimary dark:bg-darkBgPrimary dark:text-darkTextPrimary;
+  }
+nav {
+  @apply bg-lightBgPrimary text-lightTextPrimary dark:bg-darkBgPrimary dark:text-darkTextPrimary !important;
+}
+
+.bloco-secondary {
+  @apply bg-lightBgSecondary text-lightTextPrimary dark:bg-darkBgSecondary dark:text-darkTextPrimary;
+}
+
+.bloco-primary {
+  @apply bg-lightBgPrimary text-lightTextPrimary dark:bg-darkBgPrimary dark:text-darkTextPrimary;
+}
+
+.bloco {
+  min-height: 400px;
+  padding: 15px;
+}
