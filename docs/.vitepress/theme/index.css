@@ -1,21 +1,32 @@
 @import "tailwindcss";
-@tailwind base;
-@tailwind components;
+@import "tailwindcss/preflight";
 @tailwind utilities;
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-darkprimary: #031930;
+  --color-darksecondary: #223A59;
+  --color-darktertiary: #3684DB;
+  --color-lightprimary: #D1DDED;
+  --color-lightsecondary: #758BA5;
+  --color-lighttertiary: #B3D6F9;
+}
+
 body {
-  @apply bg-lightBgPrimary text-lightTextPrimary dark:bg-darkBgPrimary dark:text-darkTextPrimary;
-  }
+  @apply bg-lightprimary text-darkprimary dark:bg-darkprimary dark:text-lightprimary;
+}
+
 nav {
-  @apply bg-lightBgPrimary text-lightTextPrimary dark:bg-darkBgPrimary dark:text-darkTextPrimary !important;
+  @apply bg-lightprimary text-darkprimary dark:bg-darkprimary dark:text-lightprimary;
 }
 
 .bloco-secondary {
-  @apply bg-lightBgSecondary text-lightTextPrimary dark:bg-darkBgSecondary dark:text-darkTextPrimary;
+  @apply bg-lightsecondary text-darkprimary dark:bg-darksecondary dark:text-lightprimary;
 }
 
 .bloco-primary {
-  @apply bg-lightBgPrimary text-lightTextPrimary dark:bg-darkBgPrimary dark:text-darkTextPrimary;
+  @apply bg-lightprimary text-darkprimary dark:bg-darkprimary dark:text-lightprimary;
 }
 
 .bloco {

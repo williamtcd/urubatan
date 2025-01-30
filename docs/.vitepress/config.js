@@ -1,5 +1,17 @@
 export default {
-    head: [
-      ['link', { rel: 'stylesheet', href: '/.vitepress/theme/index.css' }],``
-    ],
-  };
+  themeConfig: {
+    appearance: false,
+    nav: [],  // Desativa a navbar do VitePress
+    siteTitle: false,  // Desativa o título do site na navbar
+    logo: false,  // Desativa o logo na navbar
+  },
+  vite: {
+    css: {
+      preprocessorOptions: {
+        css: {
+          additionalData: '@import "./theme/index.css";',
+        },
+      },
+    },
+  },
+};
