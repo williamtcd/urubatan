@@ -20,7 +20,7 @@
 
 <script setup>
 
-import Apresentacao from './components/Apresentacao.vue'
+import Apresentacao from './components/apresentacao.vue'
 import Tragetoria from './components/Tragetoria.vue'
 import Livros from './components/Livros.vue'
 import Videos from './components/Videos.vue'
